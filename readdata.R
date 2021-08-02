@@ -5,7 +5,7 @@ library(stringr)
 library(tidyverse)
 library(plyr)
 
-setwd("/Users/ferdinandjavier/Documents/COVID/datasets/2021")
+setwd("https://drive.google.com/file/d/1hRH1a776YWmkYGyaU7xQjGBGcEB3Q-RY/view?usp=sharing")
 
 temp = list.files(pattern="*.csv")
 list2env(
