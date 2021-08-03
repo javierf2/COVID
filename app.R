@@ -140,6 +140,10 @@ server <- function(input, output, session) {
             scrollX = "1000px",
             scrollY = "1000px",
             #fixedHeader = TRUE,
+            columnDefs: [
+            { width: 200, targets: 0 }
+        ],
+        fixedColumns: true
             class = 'cell-border stripe')
     )
 }
