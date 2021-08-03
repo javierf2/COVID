@@ -5,11 +5,5 @@ library(stringr)
 library(tidyverse)
 library(plyr)
 
-setwd("https://drive.google.com/file/d/1hRH1a776YWmkYGyaU7xQjGBGcEB3Q-RY/view?usp=sharing")
 
-temp = list.files(pattern="*.csv")
-list2env(
-  lapply(setNames(temp, make.names(gsub("*.csv$", "", temp))), 
-         read.csv), envir = .GlobalEnv)
-
-
+varsdata <- read.csv(file = "https://raw.githubusercontent.com/javierf2/COVID/c93cfaca70d078691a6c7e6fba5b3a7998376140/NonDomesticVAERSVAX.csv", head = TRUE, sep=",")
